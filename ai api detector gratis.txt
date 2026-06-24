@@ -1,0 +1,5 @@
+ai api detector gratis
+1. spaling : https://sapling.ai/docs/api/api-access/
+2. Copyleaks AI Detector API :https://docs.copyleaks.com/
+3. Hugging Face Serverless Inference API : https://huggingface.co/learn/cookbook/enterprise_hub_serverless_inference_api
+4. gemini : aistudio.google.com/

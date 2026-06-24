@@ -1,0 +1,6 @@
+link panudan belajar flutter 
+Flutter UI Composition ( Ini menjelaskan bahwa UI Flutter dibangun dari widget yang saling bersarang )= https://docs.flutter.dev/ui?utm_source=chatgpt.com
+Understanding Layouts in Flutter ( Menjelaskan hubungan parent-child pada widget ) = https://docs.flutter.dev/ui/layout?utm_source=chatgpt.com
+Widget Catalog ( Daftar semua widget Flutter beserta cara penggunaannya ) = https://docs.flutter.dev/ui/widgets?utm_source=chatgpt.com
+MouseRegion ( Mendeteksi pergerakan pointer mouse ) = https://api.flutter.dev/flutter/widgets/MouseRegion-class.html?utm_source=chatgpt.com
+GestureDetector ( widget yang digunakan untuk mendeteksi interaksi pengguna ) = https://api.flutter.dev/flutter/widgets/GestureDetector-class.html?utm_source=chatgpt.com  

@@ -1,0 +1,217 @@
+Catatan Dart Variable dan Tipe Data
+
+1. var
+   Dart akan menentukan tipenya secara otomatis berdasarkan nilai pertama.
+
+   Contoh:
+   var name = 'ikan';
+
+   Dart menganggap:
+   String name = 'ikan';
+
+   Setelah tipe ditentukan, tipe tidak bisa berubah.
+
+   Contoh:
+   var name = 'ikan';
+   name = 'kucing'; // valid
+
+   name = 10; // error
+
+
+2. Tipe Data Eksplisit (String, int, double, bool)
+
+   Kita sendiri yang menentukan tipe datanya.
+
+   Contoh:
+
+   String name = 'ikan';
+   int age = 20;
+   double height = 170.5;
+   bool isActive = true;
+
+   Keuntungan:
+   - Lebih jelas dibaca
+   - Error lebih cepat terdeteksi
+
+   Kekurangan:
+   - Sedikit lebih panjang ditulis
+
+
+3. dynamic
+
+   Mirip Var.
+
+   Dart tidak mengunci tipe data sejak awal valuenya sudah di tentukan.
+
+   Contoh:
+
+   dynamic data = 'ikan';
+
+   data = 20;
+   data = true;
+   data = [];
+
+   Semua valid.
+
+   Keuntungan:
+   - Sangat fleksibel
+
+   Kekurangan:
+   - Error sering muncul saat runtime
+   - Autocomplete IDE berkurang
+   - Lebih sulit dilacak
+
+
+4. Object
+
+   Bisa menyimpan berbagai tipe data.
+
+   Contoh:
+
+   Object data = 'ikan';
+
+   data = 20;
+   data = true;
+
+   Berbeda dengan dynamic.
+
+   Object tetap diperiksa oleh Dart.
+
+   Contoh:
+
+   Object data = 'ikan';
+
+   data.toUpperCase();
+
+   Error karena Dart hanya tahu bahwa data adalah Object.
+
+
+5. final
+
+   Variabel hanya boleh diisi satu kali.
+
+   Contoh:
+
+   final name = 'ikan';
+
+   name = 'kucing'; // error
+
+   Cocok digunakan untuk data yang tidak akan berubah.
+
+
+6. const
+
+   Variabel yang nilainya harus diketahui saat compile time.
+
+   Contoh:
+
+   const pi = 3.14;
+
+   Valid.
+
+   Contoh:
+
+   const now = DateTime.now();
+
+   Error.
+
+   Karena nilainya baru diketahui saat program berjalan.
+
+
+7. late
+
+   Variabel akan diisi nanti.
+
+   Contoh:
+
+   late String name;
+
+   name = 'ikan';
+
+   Digunakan ketika nilai belum tersedia saat variabel dibuat.
+
+
+8. Nullable Variable (?)
+
+   Variabel boleh berisi null.
+
+   Contoh:
+
+   String? name;
+
+   name = null;
+   name = 'ikan';
+
+   Keduanya valid.
+
+
+9. Non Nullable Variable
+
+   Variabel wajib memiliki nilai.
+
+   Contoh:
+
+   String name = 'ikan';
+
+   name = null; // error
+
+   Ini adalah perilaku default Dart modern.
+
+
+10. List
+
+    Mirip Array di JavaScript.
+
+    Contoh:
+
+    List<String> fruits = [
+      'apel',
+      'mangga',
+      'jeruk'
+    ];
+
+    atau
+
+    var fruits = [
+      'apel',
+      'mangga',
+      'jeruk'
+    ];
+
+    Dart menganggap:
+    List<String>
+
+
+11. Map
+
+    Mirip Object di JavaScript.
+
+    Contoh:
+
+    Map<String, dynamic> user = {
+      'name': 'Dzaki',
+      'age': 20,
+      'isActive': true,
+    };
+
+    String = tipe key
+    dynamic = tipe value
+
+
+12. Set
+
+    Mirip List tetapi tidak boleh ada data duplikat.
+
+    Contoh:
+
+    Set<String> fruits = {
+      'apel',
+      'apel',
+      'jeruk'
+    };
+
+    Hasil:
+    apel
+    jeruk
+
+    Data duplikat otomatis dihapus.
