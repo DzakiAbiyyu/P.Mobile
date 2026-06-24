@@ -40,5 +40,9 @@ npm run dev
 - Multer
 - PDF parsing
 
+## Tugas / ClickUp
+- Link tugas ini disediakan agar dosen dapat melihat progress dan detail pekerjaan project melalui ClickUp.
+- Link: https://app.clickup.com/90181873595/v/li/901812277190
+
 ## Catatan
 Pastikan semua dependency terinstal sebelum menjalankan aplikasi.
